@@ -35,3 +35,37 @@ ul {
     footer {
         background-color: #e5e5e5;
     }
+
+.flexContainer {
+    display: flex;
+    flex-direction: row;
+}
+
+.flexContainer div {
+    width: 33%;
+    margin: 25px;
+    padding: 25px;
+}
+.workGrid {
+    display: grid;
+    grid-template-columns: 40% 60%;
+}
+
+@media only screen and (max-width: 600px) {
+    .flexContainer {
+        display: flex;
+        flex-direction: column; 
+    }
+    .flexContainer div {
+        margin: 0px 5%;
+        width: 100%;
+        grid-template-rows: 300px 300px 300px 300px 300px;
+        grid-template-columns: 1fr ;
+    }
+    .workGrid {
+        display: grid;
+        grid-template-columns: 200px 200px 200px;
+    }
+}
+
+
